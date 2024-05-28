@@ -8,61 +8,58 @@ import Header from '../components/Header.astro'
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Lisa Pasichnyk - UI/UX Designer</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.0.23/tailwind.min.css' />
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.0.23/tailwind.min.css' /> -->
   </head>
-  <body class='bg-gray-900 text-white'>
+  <body class='bg-zinc-950 text-white'>
     <Header />
 
-    <main class='max-w-6xl mx-auto p-4'>
-      <section class='bg-gray-800 m-4 p-8 rounded-lg shadow-lg'>
-        <h2 class='text-3xl font-bold mb-4'>Increase donations to charity fund</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Client request</h3>
-            <p class='mb-4'>Create a Patreon-like donation platform</p>
-            <h3 class='text-xl font-semibold'>Context</h3>
-            <ul class='list-disc list-inside mb-4'>
-              <li>Made during product design competition DEV Challenge</li>
-              <li>8 hours to create the project</li>
-              <li>Fund has lack of budget and time</li>
-            </ul>
-            <h3 class='text-xl font-semibold'>Main idea</h3>
-            <p class='mb-4'>New flow: Donate → Get achievements → Share in socials</p>
-            <h3 class='text-xl font-semibold'>Role</h3>
-            <p class='mb-4'>Full process</p>
-            <button class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'>View project</button>
-          </div>
-          <div class='flex-shrink-0 mt-4 md:mt-0'>
-            <img src='/charity-app.png' alt='Charity App' class='max-w-xs rounded-lg shadow-lg' />
-          </div>
+    <main class='max-w-6xl mx-auto px-4'>
+      <section class='bg-neutral-900 my-4 p-8 rounded-3xl shadow-lg flex flex-col md:flex-row items-center'>
+        <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
+          <h2 class='text-3xl font-bold mb-4'>Increase donations to charity fund</h2>
+          <h3 class='text-xl font-semibold'>Client request</h3>
+          <li class='mb-4'>Create a Patreon-like donation platform</li>
+          <h3 class='text-xl font-semibold'>Context</h3>
+          <ul class='list-disc list-inside mb-4'>
+            <li>Made during product design competition DEV Challenge</li>
+            <li>8 hours to create the project</li>
+            <li>Fund has lack of budget and time</li>
+          </ul>
+          <h3 class='text-xl font-semibold'>Main idea</h3>
+          <li class='mb-4'>New flow: Donate → Get achievements → Share in socials</li>
+          <h3 class='text-xl font-semibold'>Role</h3>
+          <p class='mb-4'>Full process</p>
+          <button class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'>View project</button>
+        </div>
+        <div class='flex-shrink-0'>
+          <img src='/charity-app.png' alt='Charity App' class='max-w-xs rounded-lg shadow-lg' />
         </div>
       </section>
 
-      <section class='bg-gray-800 m-4 p-8 rounded-lg shadow-lg'>
-        <h2 class='text-3xl font-bold mb-4'>Increase retention for Real estate website</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Client request</h3>
-            <p class='mb-4'>Increase retention</p>
-            <h3 class='text-xl font-semibold'>Context</h3>
-            <ul class='list-disc list-inside mb-4'>
-              <li>Made during the Projector Medium UX design course</li>
-              <li>In collaboration with 4 designers</li>
-            </ul>
-            <h3 class='text-xl font-semibold'>Main idea</h3>
-            <p class='mb-4'>Make flow mobile-friendly</p>
-            <h3 class='text-xl font-semibold'>Role</h3>
-            <p class='mb-4'>
-              <span class='bg-gray-700 py-1 px-2 rounded-lg mr-2'>Team lead</span>
-              <span class='bg-gray-700 py-1 px-2 rounded-lg mr-2'>Research</span>
-              <span class='bg-gray-700 py-1 px-2 rounded-lg mr-2'>Design</span>
-              <span class='bg-gray-700 py-1 px-2 rounded-lg mr-2'>Structuring work</span>
-            </p>
-            <button class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'>View project</button>
+      <section class='bg-gray-800 m-4 p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center'>
+        <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
+          <h2 class='text-3xl font-bold mb-4'>Increase retention for Real estate website</h2>
+          <h3 class='text-xl font-semibold'>Client request</h3>
+          <p class='mb-4'>Increase retention</p>
+          <h3 class='text-xl font-semibold'>Context</h3>
+          <ul class='list-disc list-inside mb-4'>
+            <li>Made during the Projector Medium UX design course</li>
+            <li>In collaboration with 4 designers</li>
+          </ul>
+          <h3 class='text-xl font-semibold'>Main idea</h3>
+          <p class='mb-4'>Make flow mobile-friendly</p>
+          <h3 class='text-xl font-semibold'>Role</h3>
+          <div class='flex flex-wrap gap-2 mb-4'>
+            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Team lead</span>
+            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Research</span>
+            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Design</span>
+            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Structuring work</span>
           </div>
-          <div class='flex-shrink-0 mt-4 md:mt-0'>
-            <img src='/real-estate-app.png' alt='Real Estate App' class='max-w-xs rounded-lg shadow-lg' />
-          </div>
+          <p class='mb-4'>Presenting solution to customer</p>
+          <button class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'>View project</button>
+        </div>
+        <div class='flex-shrink-0'>
+          <img src='/real-estate-app.png' alt='Real Estate App' class='max-w-xs rounded-lg shadow-lg' />
         </div>
       </section>
 
@@ -131,6 +128,6 @@ import Header from '../components/Header.astro'
         <h2 class='text-2xl font-bold mb-4'>Get in touch!</h2>
         <button class='bg-white text-black py-2 px-4 rounded'>Contact</button>
       </section>
-    </main>
-  </body>
+    </main></body
+  >
 </html>
