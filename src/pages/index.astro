@@ -13,7 +13,7 @@ import Header from '../components/Header.astro'
     <Header />
 
     <main class='max-w-6xl mx-auto px-12'>
-      <section class='bg-neutral-900 my-4 p-8 rounded-3xl flex flex-col md:flex-row items-center'>
+      <section class='first_section custom-section'>
         <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
           <h2 class='text-3xl font-bold mb-4'>Increase donations to charity fund</h2>
           <h3 class='text-xl font-semibold'>Client request</h3>
@@ -35,7 +35,7 @@ import Header from '../components/Header.astro'
         </div>
       </section>
 
-      <section class='bg-gray-800 m-4 p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center'>
+      <section class='custom-section'>
         <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
           <h2 class='text-3xl font-bold mb-4'>Increase retention for Real estate website</h2>
           <h3 class='text-xl font-semibold'>Client request</h3>
@@ -62,7 +62,7 @@ import Header from '../components/Header.astro'
         </div>
       </section>
 
-      <section class='bg-gray-800 m-4 p-8 rounded-lg'>
+      <section class='custom-section'>
         <h2 class='text-2xl font-bold mb-4'>Improve user experience</h2>
         <div class='flex flex-col md:flex-row justify-between items-center'>
           <div class='flex-1 mb-4 md:mb-0'>
@@ -85,7 +85,7 @@ import Header from '../components/Header.astro'
         </div>
       </section>
 
-      <section class='bg-gray-800 m-4 p-8 rounded-lg'>
+      <section class='custom-section'>
         <h2 class='text-2xl font-bold mb-4'>Design system. Atoms and rules</h2>
         <div class='flex flex-col md:flex-row justify-between items-center'>
           <div class='flex-1 mb-4 md:mb-0'>
@@ -104,7 +104,7 @@ import Header from '../components/Header.astro'
         </div>
       </section>
 
-      <section class='bg-gray-800 m-4 p-8 rounded-lg'>
+      <section class='custom-section'>
         <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
         <div class='flex flex-col md:flex-row justify-between items-center'>
           <div class='flex-1 mb-4 md:mb-0'>
@@ -130,3 +130,45 @@ import Header from '../components/Header.astro'
     </main></body
   >
 </html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+  section
+  {
+    background: linear-gradient(79.11deg, #121112 2.53%, #0A0A0A 97.19%);
+border: 1px solid #FFFFFF0A
+
+  }
+  .first_section {
+   background: linear-gradient(79.12deg, #121112 2.53%, #141414 91.02%, #121112 98.33%);
+}
+  h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #DCDCDC;
+  }
+  h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #626262;
+  }
+  li {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: #A4A4A4;
+  }
+
+  .custom-section {
+    @apply my-6 p-8 rounded-3xl flex flex-col md:flex-row items-center;
+  }
+</style>
