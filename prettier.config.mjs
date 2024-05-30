@@ -1,7 +1,7 @@
-import prettierPluginAstro from "prettier-plugin-astro";
+import { astro } from "prettier-plugin-astro";
 
 export default {
-  plugins: [prettierPluginAstro],
+  plugins: [astro],
   printWidth: 80,
   tabWidth: 2,
   useTabs: false,
