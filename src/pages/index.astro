@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header.astro'
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
@@ -8,14 +8,16 @@ import Header from '../components/Header.astro'
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Lisa Pasichnyk - UI/UX Designer</title>
-    </head>
+  </head>
   <body class='bg-[#0B0A0B] text-main'>
     <Header />
 
     <main class='max-w-6xl mx-auto px-12'>
       <section class='first_section custom-section'>
-        <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
-          <h2 class='text-3xl font-bold mb-4'>Increase donations to charity fund</h2>
+        <div class='mb-4 md:mb-0 md:mr-4'>
+          <h2 class='text-3xl font-bold mb-4'>
+            Increase donations to charity fund
+          </h2>
           <h3 class='text-xl font-semibold'>Client request</h3>
           <li class='mb-4'>Create a Patreon-like donation platform</li>
           <h3 class='text-xl font-semibold'>Context</h3>
@@ -25,131 +27,173 @@ import Header from '../components/Header.astro'
             <li>Fund has lack of budget and time</li>
           </ul>
           <h3 class='text-xl font-semibold'>Main idea</h3>
-          <li class='mb-4'>New flow: Donate → Get achievements → Share in socials</li>
+          <li class='mb-4'>
+            New flow: Donate → Get achievements → Share in socials
+          </li>
           <h3 class='text-xl font-semibold'>Role</h3>
-          <p class='mb-4'>Full process</p>
-          <button class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'>View project</button>
-        </div>
-        <div class=''>
-          <img src='/1.png' alt='Charity App' class='max-w-xs ' />
+          <div class='mt-2'>
+            <p class='tag'>Full process</p>
+          </div>
+          <button>
+            <button
+              class='bg-white text-black py-2 px-4 rounded-full hover:bg-blue-600 transition'
+              >View project</button
+            >
+          </button>
+          <p class='bg-black py-2 px-4 flex-none rounded-lg w-fit'>
+            Full process
+          </p>
         </div>
       </section>
+      <div class=''>
+        <img src='/1.png' alt='Charity App' class='max-w-xs' />
+      </div>
+    </main>
 
-      <section class='custom-section'>
-        <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
-          <h2 class='text-3xl font-bold mb-4'>Increase retention for Real estate website</h2>
+    <section class='custom-section'>
+      <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
+        <h2 class='text-3xl font-bold mb-4'>
+          Increase retention for Real estate website
+        </h2>
+        <h3 class='text-xl font-semibold'>Client request</h3>
+        <p class='mb-4'>Increase retention</p>
+        <h3 class='text-xl font-semibold'>Context</h3>
+        <ul class='list-disc list-inside mb-4'>
+          <li>Made during the Projector Medium UX design course</li>
+          <li>In collaboration with 4 designers</li>
+        </ul>
+        <h3 class='text-xl font-semibold'>Main idea</h3>
+        <p class='mb-4'>Make flow mobile-friendly</p>
+        <h3 class='text-xl font-semibold'>Role</h3>
+        <div class='flex flex-wrap gap-2 mb-4'>
+          <span class='bg-gray-700 py-1 px-2 rounded-lg'>Team lead</span>
+          <span class='bg-gray-700 py-1 px-2 rounded-lg'>Research</span>
+          <span class='bg-gray-700 py-1 px-2 rounded-lg'>Design</span>
+          <span class='bg-gray-700 py-1 px-2 rounded-lg'>Structuring work</span>
+        </div>
+        <p class='mb-4'>Presenting solution to customer</p>
+        <button
+          class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'
+          >View project</button
+        >
+      </div>
+      <div class='flex-shrink-0'>
+        <img
+          src='/real-estate-app.png'
+          alt='Real Estate App'
+          class='max-w-xs rounded-lg shadow-lg'
+        />
+      </div>
+    </section>
+
+    <section class='custom-section'>
+      <h2 class='text-2xl font-bold mb-4'>Improve user experience</h2>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <div class='flex-1 mb-4 md:mb-0'>
           <h3 class='text-xl font-semibold'>Client request</h3>
-          <p class='mb-4'>Increase retention</p>
-          <h3 class='text-xl font-semibold'>Context</h3>
-          <ul class='list-disc list-inside mb-4'>
-            <li>Made during the Projector Medium UX design course</li>
-            <li>In collaboration with 4 designers</li>
+          <p>Problem-based on problem nested</p>
+          <h3 class='text-xl font-semibold mt-4'>Context</h3>
+          <ul class='list-disc list-inside'>
+            <li>Improving existing features</li>
+            <li>Made during UX design course</li>
           </ul>
-          <h3 class='text-xl font-semibold'>Main idea</h3>
-          <p class='mb-4'>Make flow mobile-friendly</p>
-          <h3 class='text-xl font-semibold'>Role</h3>
-          <div class='flex flex-wrap gap-2 mb-4'>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Team lead</span>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Research</span>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Design</span>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Structuring work</span>
-          </div>
-          <p class='mb-4'>Presenting solution to customer</p>
-          <button class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'>View project</button>
+          <h3 class='text-xl font-semibold mt-4'>Main idea</h3>
+          <p>Get notifications about platform updates faster</p>
+          <h3 class='text-xl font-semibold mt-4'>Role</h3>
+          <p>Full process</p>
+          <button class='bg-white text-black py-2 px-4 rounded mt-4'
+            >View project</button
+          >
         </div>
         <div class='flex-shrink-0'>
-          <img src='/real-estate-app.png' alt='Real Estate App' class='max-w-xs rounded-lg shadow-lg' />
+          <img
+            src='/improve-experience.png'
+            alt='Improve Experience'
+            class='max-w-xs rounded-lg'
+          />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class='custom-section'>
-        <h2 class='text-2xl font-bold mb-4'>Improve user experience</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Client request</h3>
-            <p>Problem-based on problem nested</p>
-            <h3 class='text-xl font-semibold mt-4'>Context</h3>
-            <ul class='list-disc list-inside'>
-              <li>Improving existing features</li>
-              <li>Made during UX design course</li>
-            </ul>
-            <h3 class='text-xl font-semibold mt-4'>Main idea</h3>
-            <p>Get notifications about platform updates faster</p>
-            <h3 class='text-xl font-semibold mt-4'>Role</h3>
-            <p>Full process</p>
-            <button class='bg-white text-black py-2 px-4 rounded mt-4'>View project</button>
-          </div>
-          <div class='flex-shrink-0'>
-            <img src='/improve-experience.png' alt='Improve Experience' class='max-w-xs rounded-lg' />
-          </div>
+    <section class='custom-section'>
+      <h2 class='text-2xl font-bold mb-4'>Design system. Atoms and rules</h2>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <div class='flex-1 mb-4 md:mb-0'>
+          <h3 class='text-xl font-semibold'>Context</h3>
+          <ul class='list-disc list-inside'>
+            <li>Design system was created from scratch</li>
+            <li>Built with a team of 5 designers</li>
+          </ul>
+          <h3 class='text-xl font-semibold mt-4'>Role</h3>
+          <p>Research, Design, Integration with developers</p>
+          <button class='bg-white text-black py-2 px-4 rounded mt-4'
+            >View Figma file</button
+          >
         </div>
-      </section>
-
-      <section class='custom-section'>
-        <h2 class='text-2xl font-bold mb-4'>Design system. Atoms and rules</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Context</h3>
-            <ul class='list-disc list-inside'>
-              <li>Design system was created from scratch</li>
-              <li>Built with a team of 5 designers</li>
-            </ul>
-            <h3 class='text-xl font-semibold mt-4'>Role</h3>
-            <p>Research, Design, Integration with developers</p>
-            <button class='bg-white text-black py-2 px-4 rounded mt-4'>View Figma file</button>
-          </div>
-          <div class='flex-shrink-0'>
-            <img src='/design-system.png' alt='Design System' class='max-w-xs rounded-lg' />
-          </div>
+        <div class='flex-shrink-0'>
+          <img
+            src='/design-system.png'
+            alt='Design System'
+            class='max-w-xs rounded-lg'
+          />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class='custom-section'>
-        <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Context</h3>
-            <ul class='list-disc list-inside'>
-              <li>Custom dashboards for various industries</li>
-              <li>Collaborated with multiple teams</li>
-            </ul>
-            <h3 class='text-xl font-semibold mt-4'>Role</h3>
-            <p>Team lead, Facilitator, Manager</p>
-            <button class='bg-white text-black py-2 px-4 rounded mt-4'>View project</button>
-          </div>
-          <div class='flex-shrink-0'>
-            <img src='/commercial-projects.png' alt='Commercial Projects' class='max-w-xs rounded-lg' />
-          </div>
+    <section class='custom-section'>
+      <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <div class='flex-1 mb-4 md:mb-0'>
+          <h3 class='text-xl font-semibold'>Context</h3>
+          <ul class='list-disc list-inside'>
+            <li>Custom dashboards for various industries</li>
+            <li>Collaborated with multiple teams</li>
+          </ul>
+          <h3 class='text-xl font-semibold mt-4'>Role</h3>
+          <p>Team lead, Facilitator, Manager</p>
+          <button class='bg-white text-black py-2 px-4 rounded mt-4'
+            >View project</button
+          >
         </div>
-      </section>
+        <div class='flex-shrink-0'>
+          <img
+            src='/commercial-projects.png'
+            alt='Commercial Projects'
+            class='max-w-xs rounded-lg'
+          />
+        </div>
+      </div>
+    </section>
 
-      <section class='text-center py-8'>
-        <h2 class='text-2xl font-bold mb-4'>Get in touch!</h2>
-        <button class='bg-white text-black py-2 px-4 rounded'>Contact</button>
-      </section>
-    </main></body
-  >
+    <section class='text-center py-8'>
+      <h2 class='text-2xl font-bold mb-4'>Get in touch!</h2>
+      <button class='bg-white text-black py-2 px-4 rounded'>Contact</button>
+    </section>
+  </body>
 </html>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-  section
-  {
-    background: linear-gradient(79.11deg, #121112 2.53%, #0A0A0A 97.19%);
-border: 1px solid #FFFFFF0A
-
+  section {
+    background: linear-gradient(79.11deg, #121112 2.53%, #0a0a0a 97.19%);
+    border: 1px solid #ffffff0a;
   }
   .first_section {
-   background: linear-gradient(79.12deg, #121112 2.53%, #141414 91.02%, #121112 98.33%);
-}
+    background: linear-gradient(
+      79.12deg,
+      #121112 2.53%,
+      #141414 91.02%,
+      #121112 98.33%
+    );
+  }
   h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 130%;
-    color: #DCDCDC;
+    color: #dcdcdc;
   }
   h3 {
     font-family: 'Roboto';
@@ -160,15 +204,18 @@ border: 1px solid #FFFFFF0A
     color: #626262;
   }
   li {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 130%;
-color: #A4A4A4;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #a4a4a4;
   }
 
   .custom-section {
     @apply my-6 p-8 rounded-3xl flex flex-col md:flex-row items-center;
+  }
+  .tag {
+    @apply bg-black py-2 px-4 flex-none rounded-lg w-fit;
   }
 </style>
