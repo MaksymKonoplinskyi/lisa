@@ -1,4 +1,5 @@
 ---
+import ButtonLink from '../components/ButtonLink.astro';
 import Header from '../components/Header.astro';
 ---
 
@@ -14,6 +15,9 @@ import Header from '../components/Header.astro';
 
     <main class='max-w-6xl mx-auto px-12'>
       <section class='first_section custom-section'>
+        <div class=''>
+          <img src='/1.png' alt='Charity App' class='max-w-xs' />
+        </div>
         <div class='mb-4 md:mb-0 md:mr-4'>
           <h2 class='text-3xl font-bold mb-4'>
             Increase donations to charity fund
@@ -35,25 +39,11 @@ import Header from '../components/Header.astro';
             <p class='tag'>Full process</p>
           </div>
           <div class='mt-4 flex items-center justify-center'>
-            <a
-              href='https://www.figma.com/proto/NAJrfdFEIoeQeWl3u5kW99/Come-back-alive?page-id=0%3A1&node-id=303-41102&viewport=-925%2C-901%2C0.11&t=2aAwEsLZ13RphX1N-8&scaling=scale-down-width&starting-point-node-id=303%3A41102&show-proto-sidebar=1&hide-ui=1'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <button
-                class='bg-white p-2 bg-opacity-[0.02] border-[1px] rounded-full border-opacity-5 border-white hover:bg-opacity-10 transition'
-              >
-                <div
-                  class='bg-white text-black py-2 px-4 rounded-full hover:bg-slate-100 transition'
-                >
-                  View project
-                </div>
-              </button>
-            </a>
+            <ButtonLink
+              label='View project'
+              link='https://www.figma.com/proto/NAJrfdFEIoeQeWl3u5kW99/Come-back-alive?page-id=0%3A1&node-id=303-41102&viewport=-925%2C-901%2C0.11&t=2aAwEsLZ13RphX1N-8&scaling=scale-down-width&starting-point-node-id=303%3A41102&show-proto-sidebar=1&hide-ui=1'
+            />
           </div>
-        </div>
-        <div class=''>
-          <img src='/1.png' alt='Charity App' class='max-w-xs' />
         </div>
       </section>
 
@@ -221,7 +211,7 @@ import Header from '../components/Header.astro';
     }
 
     .custom-section {
-      @apply my-6 p-8 rounded-3xl flex flex-col-reverse md:flex-row items-center;
+      @apply my-6 p-8 rounded-3xl flex flex-col md:flex-row-reverse items-center justify-between;
     }
     .tag {
       @apply bg-black py-2 px-4 flex-none rounded-lg w-fit;
