@@ -23,15 +23,15 @@ import RoleList from '../components/RoleList.astro';
           <h2 class='text-3xl font-bold mb-4'>
             Increase donations to charity fund
           </h2>
-          <h3 class='text-xl font-semibold'>Client request</h3>
+          <h3 class='text-xl'>Client request</h3>
           <li class='mb-4'>Create a Patreon-like donation platform</li>
-          <h3 class='text-xl font-semibold'>Context</h3>
+          <h3 class='text-xl'>Context</h3>
           <ul class='list-disc list-inside mb-4'>
             <li>Made during product design competition DEV Challenge</li>
             <li>8 hours to create the project</li>
             <li>Fund has lack of budget and time</li>
           </ul>
-          <h3 class='text-xl font-semibold'>Main idea</h3>
+          <h3 class='text-xl'>Main idea</h3>
           <li class='mb-4'>
             New flow: Donate → Get achievements → Share in socials
           </li>
@@ -52,21 +52,21 @@ import RoleList from '../components/RoleList.astro';
             Increase retention for Real estate website
           </h2>
           <h3 class='text-xl font-semibold'>Client request</h3>
-          <p class='mb-4'>Increase retention</p>
+          <li class='mb-4'>Increase retention</li>
           <h3 class='text-xl font-semibold'>Context</h3>
           <ul class='list-disc list-inside mb-4'>
             <li>Made during the Projector Medium UX design course</li>
             <li>In collaboration with 4 designers</li>
           </ul>
           <h3 class='text-xl font-semibold'>Main idea</h3>
-          <p class='mb-4'>Make flow mobile-friendly</p>
+          <li class='mb-4'>Make flow mobile-friendly</li>
           <RoleList
             roles={[
-              'lead',
-              'research',
-              'design',
-              'structuring work',
-              'Presenting solution to customer',
+              'Team lead',
+              'Structuring work',
+              'Research',
+              'Design',
+              'Presenting the solution to customer',
             ]}
           />
 
@@ -78,43 +78,43 @@ import RoleList from '../components/RoleList.astro';
           </div>
         </div>
         <div class=''>
-          <img
-            src='/2.png'
-            alt='Real Estate App'
-            class='max-w-xs rounded-lg shadow-lg'
-          />
+          <img src='/2.png' alt='Real Estate App' class='max-w-xs rounded-lg' />
         </div>
       </section>
 
       <section class='custom-section'>
-        <h2 class='text-2xl font-bold mb-4'>Improve user experience</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Client request</h3>
-            <p>Problem-based on problem nested</p>
-            <h3 class='text-xl font-semibold mt-4'>Context</h3>
-            <ul class='list-disc list-inside'>
-              <li>Improving existing features</li>
-              <li>Made during UX design course</li>
-            </ul>
-            <h3 class='text-xl font-semibold mt-4'>Main idea</h3>
-            <p>Get notifications about platform updates faster</p>
-            <h3 class='text-xl font-semibold mt-4'>Role</h3>
-            <p>Full process</p>
-            <button class='bg-white text-black py-2 px-4 rounded mt-4'
-              >View project</button
-            >
-          </div>
-          <div class='flex-shrink-0'>
-            <img
-              src='/improve-experience.png'
-              alt='Improve Experience'
-              class='max-w-xs rounded-lg'
+        <div class=''>
+          <img
+            src='/3.png'
+            alt='Improve Experience'
+            class='max-w-xs rounded-lg'
+          />
+        </div>
+        <div>
+          <h2 class='text-2xl font-bold mb-4'>
+            Improve user experience for Ukrainian railway
+          </h2>
+
+          <h3 class=''>Context</h3>
+          <li>Problem-based on problem nested</li>
+          <h3 class=''>Problem</h3>
+          <ul class='list-disc list-inside'>
+            <li>Passengers are waiting for number of platform on board</li>
+            <li>
+              Passengers need to come early to see number and go to platform
+            </li>
+          </ul>
+          <h3 class='text-xl font-semibold mt-4'>Main idea</h3>
+          <li>Get notifications about platform updates faster</li>
+          <RoleList roles={['Full process']} />
+          <div class='mt-4 flex items-center justify-center'>
+            <ButtonLink
+              label='View project'
+              link='https://www.figma.com/proto/0Rt2wMBwmsLWPdm1o4mwn0/Tram?page-id=0%3A1&node-id=116-870&viewport=204%2C243%2C0.25&t=0mBNLD8qivxnKzBH-8&scaling=scale-down-width&hide-ui=1&fuid=1260951791851052033'
             />
           </div>
         </div>
       </section>
-
       <section class='custom-section'>
         <h2 class='text-2xl font-bold mb-4'>Design system. Atoms and rules</h2>
         <div class='flex flex-col md:flex-row justify-between items-center'>
@@ -196,13 +196,12 @@ import RoleList from '../components/RoleList.astro';
     }
     h3 {
       font-style: normal;
-      font-weight: 500;
       font-size: 18px;
       line-height: 130%;
       color: #626262;
+      @apply mt-8 font-medium;
     }
     li {
-      font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
