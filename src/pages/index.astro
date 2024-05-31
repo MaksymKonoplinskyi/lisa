@@ -109,7 +109,7 @@ import RoleList from '../components/RoleList.astro';
           <RoleList roles={['Full process']} />
           <div class='mt-4 flex items-center justify-center'>
             <ButtonLink
-              label='View project'
+              label='View Figma file'
               link='https://www.figma.com/proto/0Rt2wMBwmsLWPdm1o4mwn0/Tram?page-id=0%3A1&node-id=116-870&viewport=204%2C243%2C0.25&t=0mBNLD8qivxnKzBH-8&scaling=scale-down-width&hide-ui=1&fuid=1260951791851052033'
             />
           </div>
@@ -120,24 +120,39 @@ import RoleList from '../components/RoleList.astro';
           <img src='/4.png' alt='Design System' class='max-w-xs rounded-lg' />
         </div>
         <div class=''>
-          <h2 class='text-2xl font-bold mb-4'>
-            Design system. Atoms and rules
-          </h2>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Context</h3>
-            <ul class='list-disc list-inside'>
-              <li>Design system was created from scratch</li>
-              <li>Built with a team of 5 designers</li>
-            </ul>
-            <h3 class='text-xl font-semibold mt-4'>Role</h3>
-            <p>Research, Design, Integration with developers</p>
-            <button class='bg-white text-black py-2 px-4 rounded mt-4'
-              >View Figma file</button
-            >
+          <h2 class='text-2xl font-bold mb-4'>Design system Atoms and rules</h2>
+
+          <h3>Context</h3>
+          <ul class='list-disc list-inside'>
+            <li>
+              Design system was created from scratch from the moment I joined
+              the company
+            </li>
+            <li>
+              Six months later, it was developed together with two junior
+              designers
+            </li>
+          </ul>
+          <h3>Problem</h3>
+          <ul class='list-disc list-inside'>
+            <li>Developers created UI without a designer</li>
+            <li>
+              Product was not consistent, not user-friendly, and the creation
+              process was long
+            </li>
+          </ul>
+          <RoleList
+            roles={['Founder', 'Rules writer', 'Negotiator with developers']}
+          />
+
+          <div class='mt-4 flex items-center justify-center'>
+            <ButtonLink
+              label='View Figma file'
+              link="https://www.figma.com/design/FlPfgEDwGlYKcPyFtFU9lS/Part-of-Design-system-(portfolio)?node-id=2005-36139&t=RX7UnHVaKiDiksvX-1&fuid=1260951791851052033'"
+            />
           </div>
         </div>
       </section>
-
       <section class='custom-section'>
         <div class=''>
           <img
@@ -148,67 +163,131 @@ import RoleList from '../components/RoleList.astro';
         </div>
         <div class=''>
           <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
-          <div class='flex-1 mb-4 md:mb-0'>
-            <h3 class='text-xl font-semibold'>Context</h3>
-            <ul class='list-disc list-inside'>
-              <li>Custom dashboards for various industries</li>
-              <li>Collaborated with multiple teams</li>
-            </ul>
-            <h3 class='text-xl font-semibold mt-4'>Role</h3>
-            <p>Team lead, Facilitator, Manager</p>
-            <button class='bg-white text-black py-2 px-4 rounded mt-4'
-              >View project</button
-            >
+
+          <ul class='list-disc list-inside'>
+            <li class=''>
+              Created dashboard templates for IoT devices for different
+              industries
+            </li>
+            <li>
+              Created 40+ new widgets and redesigned 90+ old widgets and
+              settings
+            </li>
+            <li>
+              Redesigned structures with many links and documented the main
+              principles of redesign:
+              <ul class='ml-6 nested-list'>
+                <li class='!text-secondary'>
+                  - redesigned the interface for node programming
+                </li>
+                <li class='!text-secondary'>
+                  - redesigned 93 widget settings to improve usability
+                </li>
+              </ul>
+            </li>
+            <li>
+              Designed new non-standard structures:
+              <ul class='ml-6'>
+                <li class='!text-secondary'>
+                  - functionality to create alert rules with 3 levels of
+                  hierarchy
+                </li>
+                <li class='!text-secondary'>
+                  - notification center: set up notifications from different
+                  sources
+                </li>
+                <li class='!text-secondary'>
+                  - notification center: set up notifications from different
+                  sources
+                </li>
+              </ul>
+            </li>
+            <li>integration center: settings for 20+ types of integrations</li>
+          </ul>
+          <RoleList
+            roles={[
+              'Team lead',
+              'Facilitator',
+              'Manager',
+              'Interviewer',
+              'Market research',
+              'Competitive analysis',
+              'Usability tests',
+            ]}
+          />
+
+          <div class='mt-4 flex items-center justify-center'>
+            <ButtonLink
+              label='View project'
+              link='https://www.figma.com/proto/j0VbewYlcf6qRUojVZdpKT/DIM.RIA?page-id=419%3A78248&node-id=2129-30958&viewport=867%2C-1%2C0.04&t=Dqfiq4scPINTH1R4-8&scaling=scale-down-width&hide-ui=1&fuid=1260951791851052033'
+            />
           </div>
         </div>
       </section>
+      <section class='text-center py-8'>
+        <h2 class='text-2xl font-bold mb-4'>Get in touch!</h2>
+        <button class='bg-white text-black py-2 px-4 rounded'>Contact</button>
+      </section>
     </main>
-    <section class='text-center py-8'>
-      <h2 class='text-2xl font-bold mb-4'>Get in touch!</h2>
-      <button class='bg-white text-black py-2 px-4 rounded'>Contact</button>
-    </section>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+      .list-disc {
+        list-style-position: inside;
+      }
+
+      .list-disc li {
+        margin-bottom: 0.5em;
+        text-indent: -1em; /* Negative indent for aligning text */
+        padding-left: 1em; /* Padding to match the negative indent */
+      }
+
+      .nested-list {
+        padding-left: 2em; /* Increased padding for nested lists */
+      }
+
+      .list-inside li span {
+        display: block;
+      }
+
+      section {
+        background: linear-gradient(79.11deg, #121112 2.53%, #0a0a0a 97.19%);
+        border: 1px solid #ffffff0a;
+      }
+      .first_section {
+        background: linear-gradient(
+          79.12deg,
+          #121112 2.53%,
+          #141414 91.02%,
+          #121112 98.33%
+        );
+      }
+      h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 130%;
+        color: #dcdcdc;
+      }
+      h3 {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 130%;
+        color: #626262;
+        @apply mt-8 font-medium;
+      }
+      li {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #a4a4a4;
+      }
+
+      section {
+        @apply gap-4 my-6 p-8 rounded-3xl flex flex-col items-center justify-between odd:md:flex-row-reverse even:md:flex-row;
+      }
+    </style>
   </body>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-    section {
-      background: linear-gradient(79.11deg, #121112 2.53%, #0a0a0a 97.19%);
-      border: 1px solid #ffffff0a;
-    }
-    .first_section {
-      background: linear-gradient(
-        79.12deg,
-        #121112 2.53%,
-        #141414 91.02%,
-        #121112 98.33%
-      );
-    }
-    h2 {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 130%;
-      color: #dcdcdc;
-    }
-    h3 {
-      font-style: normal;
-      font-size: 18px;
-      line-height: 130%;
-      color: #626262;
-      @apply mt-8 font-medium;
-    }
-    li {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 130%;
-      color: #a4a4a4;
-    }
-
-    section {
-      @apply gap-4 my-6 p-8 rounded-3xl flex flex-col items-center justify-between odd:md:flex-row-reverse even:md:flex-row;
-    }
-  </style>
 </html>
