@@ -15,7 +15,7 @@ import RoleList from '../components/RoleList.astro';
     <Header />
 
     <main class='max-w-6xl mx-auto px-12'>
-      <section class='first_section custom-section'>
+      <section class='first_section'>
         <div class=''>
           <img src='/1.png' alt='Charity App' class='max-w-xs' />
         </div>
@@ -46,7 +46,10 @@ import RoleList from '../components/RoleList.astro';
         </div>
       </section>
 
-      <section class='custom-section gap-4'>
+      <section class=''>
+        <div class=''>
+          <img src='/2.png' alt='Real Estate App' class='max-w-xs rounded-lg' />
+        </div>
         <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
           <h2 class='text-3xl font-bold mb-4'>
             Increase retention for Real estate website
@@ -76,9 +79,6 @@ import RoleList from '../components/RoleList.astro';
               link='https://www.figma.com/proto/j0VbewYlcf6qRUojVZdpKT/DIM.RIA?page-id=419%3A78248&node-id=2129-30958&viewport=867%2C-1%2C0.04&t=Dqfiq4scPINTH1R4-8&scaling=scale-down-width&hide-ui=1&fuid=1260951791851052033'
             />
           </div>
-        </div>
-        <div class=''>
-          <img src='/2.png' alt='Real Estate App' class='max-w-xs rounded-lg' />
         </div>
       </section>
 
@@ -116,8 +116,13 @@ import RoleList from '../components/RoleList.astro';
         </div>
       </section>
       <section class='custom-section'>
-        <h2 class='text-2xl font-bold mb-4'>Design system. Atoms and rules</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
+        <div class=''>
+          <img src='/4.png' alt='Design System' class='max-w-xs rounded-lg' />
+        </div>
+        <div class=''>
+          <h2 class='text-2xl font-bold mb-4'>
+            Design system. Atoms and rules
+          </h2>
           <div class='flex-1 mb-4 md:mb-0'>
             <h3 class='text-xl font-semibold'>Context</h3>
             <ul class='list-disc list-inside'>
@@ -130,19 +135,19 @@ import RoleList from '../components/RoleList.astro';
               >View Figma file</button
             >
           </div>
-          <div class='flex-shrink-0'>
-            <img
-              src='/design-system.png'
-              alt='Design System'
-              class='max-w-xs rounded-lg'
-            />
-          </div>
         </div>
       </section>
 
       <section class='custom-section'>
-        <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
-        <div class='flex flex-col md:flex-row justify-between items-center'>
+        <div class=''>
+          <img
+            src='/5.png'
+            alt='Commercial Projects'
+            class='max-w-xs rounded-lg'
+          />
+        </div>
+        <div class=''>
+          <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
           <div class='flex-1 mb-4 md:mb-0'>
             <h3 class='text-xl font-semibold'>Context</h3>
             <ul class='list-disc list-inside'>
@@ -154,13 +159,6 @@ import RoleList from '../components/RoleList.astro';
             <button class='bg-white text-black py-2 px-4 rounded mt-4'
               >View project</button
             >
-          </div>
-          <div class='flex-shrink-0'>
-            <img
-              src='/commercial-projects.png'
-              alt='Commercial Projects'
-              class='max-w-xs rounded-lg'
-            />
           </div>
         </div>
       </section>
@@ -209,8 +207,8 @@ import RoleList from '../components/RoleList.astro';
       color: #a4a4a4;
     }
 
-    .custom-section {
-      @apply my-6 p-8 rounded-3xl flex flex-col md:flex-row-reverse items-center justify-between;
+    section {
+      @apply gap-4 my-6 p-8 rounded-3xl flex flex-col items-center justify-between odd:md:flex-row-reverse even:md:flex-row;
     }
   </style>
 </html>
