@@ -1,6 +1,7 @@
 ---
 import ButtonLink from '../components/ButtonLink.astro';
 import Header from '../components/Header.astro';
+import RoleList from '../components/RoleList.astro';
 ---
 
 <!doctype html>
@@ -34,10 +35,8 @@ import Header from '../components/Header.astro';
           <li class='mb-4'>
             New flow: Donate → Get achievements → Share in socials
           </li>
-          <h3 class='text-xl font-semibold'>Role</h3>
-          <div class='mt-2'>
-            <p class='tag'>Full process</p>
-          </div>
+          <RoleList roles={['Full process']} />
+
           <div class='mt-4 flex items-center justify-center'>
             <ButtonLink
               label='View project'
@@ -47,7 +46,7 @@ import Header from '../components/Header.astro';
         </div>
       </section>
 
-      <section class='custom-section'>
+      <section class='custom-section gap-4'>
         <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
           <h2 class='text-3xl font-bold mb-4'>
             Increase retention for Real estate website
@@ -61,24 +60,26 @@ import Header from '../components/Header.astro';
           </ul>
           <h3 class='text-xl font-semibold'>Main idea</h3>
           <p class='mb-4'>Make flow mobile-friendly</p>
-          <h3 class='text-xl font-semibold'>Role</h3>
-          <div class='flex flex-wrap gap-2 mb-4'>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Team lead</span>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Research</span>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'>Design</span>
-            <span class='bg-gray-700 py-1 px-2 rounded-lg'
-              >Structuring work</span
-            >
+          <RoleList
+            roles={[
+              'lead',
+              'research',
+              'design',
+              'structuring work',
+              'Presenting solution to customer',
+            ]}
+          />
+
+          <div class='mt-4 flex items-center justify-center'>
+            <ButtonLink
+              label='View project'
+              link='https://www.figma.com/proto/j0VbewYlcf6qRUojVZdpKT/DIM.RIA?page-id=419%3A78248&node-id=2129-30958&viewport=867%2C-1%2C0.04&t=Dqfiq4scPINTH1R4-8&scaling=scale-down-width&hide-ui=1&fuid=1260951791851052033'
+            />
           </div>
-          <p class='mb-4'>Presenting solution to customer</p>
-          <button
-            class='bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition'
-            >View project</button
-          >
         </div>
-        <div class='flex-shrink-0'>
+        <div class=''>
           <img
-            src='/real-estate-app.png'
+            src='/2.png'
             alt='Real Estate App'
             class='max-w-xs rounded-lg shadow-lg'
           />
@@ -194,7 +195,6 @@ import Header from '../components/Header.astro';
       color: #dcdcdc;
     }
     h3 {
-      font-family: 'Roboto';
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -212,9 +212,6 @@ import Header from '../components/Header.astro';
 
     .custom-section {
       @apply my-6 p-8 rounded-3xl flex flex-col md:flex-row-reverse items-center justify-between;
-    }
-    .tag {
-      @apply bg-black py-2 px-4 flex-none rounded-lg w-fit;
     }
   </style>
 </html>

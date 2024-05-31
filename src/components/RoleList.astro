@@ -1,0 +1,26 @@
+---
+// RoleList.astro
+interface RoleListProps {
+  roles: string[];
+}
+
+const { roles }: RoleListProps = Astro.props as RoleListProps;
+---
+
+<h3 class='text-xl font-semibold mb-2'>Role</h3>
+<div class='flex flex-wrap gap-2 mb-4'>
+  {roles.map((role) => <span class='tag'>{role}</span>)}
+</div>
+
+<style>
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #626262;
+  }
+  .tag {
+    @apply bg-black py-2 px-4 flex-none rounded-lg w-fit;
+  }
+</style>
