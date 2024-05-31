@@ -235,19 +235,21 @@ import RoleList from '../components/RoleList.astro';
           </div>
         </div>
       </section>
-      <footer class='text-center py-8 relative'>
-        <img class='absolute z-[1] mx-auto my-auto w-full' src='/f.svg' />
-        <div class='my-[92px] z-[10]'>
-          <h2 class='text-2xl font-bold mb-4'>Get in touch!</h2>
-          <div class='mt-4 flex items-center justify-center'>
-            <ButtonLink
-              label='Linkedin'
-              link='https://www.linkedin.com/in/lisa-pasichnyk/'
-            />
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer
+      class='relative text-center bg-cover bg-center'
+      style="background-image: url('/f.svg');"
+    >
+      <div class='py-[92px] z-[10] object-cover'>
+        <h2 class=''>Get in touch!</h2>
+        <div class='mt-4 flex items-center justify-center'>
+          <ButtonLink
+            label='Linkedin'
+            link='https://www.linkedin.com/in/lisa-pasichnyk/'
+          />
+        </div>
+      </div>
+    </footer>
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
