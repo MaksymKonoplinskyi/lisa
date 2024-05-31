@@ -237,11 +237,11 @@ import RoleList from '../components/RoleList.astro';
       </section>
     </main>
     <footer
-      class='text-center bg-center bg-no-repeat bg-contain'
-      style="background-image: url('/f.svg');"
+      class='relative text-center bg-cover bg-center bg-no-repeat'
+      style="background-image: url('/f.svg'); background-size: cover; background-position: center;"
     >
-      <div class='py-[92px] z-[10] object-cover'>
-        <h2 class=''>Get in touch!</h2>
+      <div class='py-[92px] z-[10] relative'>
+        <h2 class='text-white'>Get in touch!</h2>
         <div class='mt-4 flex items-center justify-center'>
           <ButtonLink
             label='Linkedin'
