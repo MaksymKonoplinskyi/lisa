@@ -19,7 +19,7 @@ import RoleList from '../components/RoleList.astro';
         <div class=''>
           <img src='/1.png' alt='Charity App' class='max-w-xs' />
         </div>
-        <div class='mb-4 md:mb-0 md:mr-4'>
+        <div class='text-blok'>
           <h2 class='mb-4'>Increase donations to charity fund</h2>
           <h3 class=''>Client request</h3>
           <ul class='list-disc ml-8'>
@@ -52,7 +52,7 @@ import RoleList from '../components/RoleList.astro';
         <div class=''>
           <img src='/2.png' alt='Real Estate App' class='max-w-xs rounded-lg' />
         </div>
-        <div class='flex-1 mb-4 md:mb-0 md:mr-4'>
+        <div class='text-blok'>
           <h2 class='text-3xl font-bold mb-4'>
             Increase retention for Real estate website
           </h2>
@@ -96,7 +96,7 @@ import RoleList from '../components/RoleList.astro';
             class='max-w-xs rounded-lg'
           />
         </div>
-        <div>
+        <div class='text-blok'>
           <h2 class='text-2xl font-bold mb-4'>
             Improve user experience for Ukrainian railway
           </h2>
@@ -129,7 +129,7 @@ import RoleList from '../components/RoleList.astro';
         <div class=''>
           <img src='/4.png' alt='Design System' class='max-w-xs rounded-lg' />
         </div>
-        <div class=''>
+        <div class='text-blok'>
           <h2 class='text-2xl font-bold mb-4'>Design system Atoms and rules</h2>
 
           <h3>Context</h3>
@@ -171,7 +171,7 @@ import RoleList from '../components/RoleList.astro';
             class='max-w-xs rounded-lg'
           />
         </div>
-        <div class=''>
+        <div class='text-blok'>
           <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
 
           <ul class='list-disc'>
@@ -307,6 +307,9 @@ import RoleList from '../components/RoleList.astro';
         @apply mb-2 -indent-0;
       }
 
+      .text-blok {
+        @apply flex-1 mb-4 md:mb-0 md:mr-4;
+      }
       section {
         @apply gap-4 my-6 p-8 rounded-3xl flex flex-col items-center justify-between odd:md:flex-row-reverse even:md:flex-row;
       }
