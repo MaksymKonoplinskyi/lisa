@@ -236,10 +236,7 @@ import RoleList from '../components/RoleList.astro';
         </div>
       </section>
     </main>
-    <footer
-      class='relative text-center bg-cover bg-center bg-no-repeat'
-      style="background-image: url('/f.svg'); background-size: cover; background-position: center;"
-    >
+    <footer class='relative text-center bg-cover bg-center bg-no-repeat'>
       <div class='py-[92px] z-[10] relative'>
         <h2 class='text-white'>Get in touch!</h2>
         <div class='mt-4 flex items-center justify-center'>
@@ -260,11 +257,11 @@ import RoleList from '../components/RoleList.astro';
       }
 
       footer {
-        background: linear-gradient(
-          21.76deg,
-          #000000 72.49%,
-          rgba(0, 0, 0, 0) 88.26%
-        );
+        background-image: url('/f.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: 100% auto; */
       }
 
       .list-dash {
