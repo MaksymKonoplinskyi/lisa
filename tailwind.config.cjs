@@ -5,7 +5,7 @@ module.exports = {
       colors: {
         main: '#DCDCDC',
         primary: '#A4A4A4',
-        secondary: '#626262',
+        secondary: '#707070',
         // accent: '#3a3a3a',
       },
       boxShadow: {
@@ -16,6 +16,6 @@ module.exports = {
       },
     },
   },
-  
+
   plugins: [],
-}
+};
