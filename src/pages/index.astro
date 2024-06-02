@@ -12,12 +12,11 @@ import RoleList from '../components/RoleList.astro';
     <title>Lisa Pasichnyk - UI/UX Designer</title>
   </head>
   <body class='bg-[#0B0A0B] text-main font-sans'>
-    <Header />
-
     <main class='max-w-6xl mx-auto px-12'>
+      <Header />
       <section class='first_section'>
-        <div class=''>
-          <img src='/1.png' alt='Charity App' class='max-w-xs' />
+        <div class='img-blok'>
+          <img src='/1.png' alt='Charity App' class='' />
         </div>
         <div class='text-blok'>
           <h2 class='mb-4'>Increase donations to charity fund</h2>
@@ -49,8 +48,8 @@ import RoleList from '../components/RoleList.astro';
       </section>
 
       <section class=''>
-        <div class=''>
-          <img src='/2.png' alt='Real Estate App' class='max-w-xs rounded-lg' />
+        <div class='img-blok'>
+          <img src='/2.png' alt='Real Estate App' class='' />
         </div>
         <div class='text-blok'>
           <h2 class='text-3xl font-bold mb-4'>
@@ -89,12 +88,8 @@ import RoleList from '../components/RoleList.astro';
       </section>
 
       <section class='custom-section'>
-        <div class=''>
-          <img
-            src='/3.png'
-            alt='Improve Experience'
-            class='max-w-xs rounded-lg'
-          />
+        <div class='img-blok'>
+          <img src='/3.png' alt='Improve Experience' class='' />
         </div>
         <div class='text-blok'>
           <h2 class='text-2xl font-bold mb-4'>
@@ -126,8 +121,8 @@ import RoleList from '../components/RoleList.astro';
         </div>
       </section>
       <section class='custom-section'>
-        <div class=''>
-          <img src='/4.png' alt='Design System' class='max-w-xs rounded-lg' />
+        <div class='img-blok'>
+          <img src='/4.png' alt='Design System' class='' />
         </div>
         <div class='text-blok'>
           <h2 class='text-2xl font-bold mb-4'>Design system Atoms and rules</h2>
@@ -164,12 +159,8 @@ import RoleList from '../components/RoleList.astro';
         </div>
       </section>
       <section class='custom-section'>
-        <div class=''>
-          <img
-            src='/5.png'
-            alt='Commercial Projects'
-            class='max-w-xs rounded-lg'
-          />
+        <div class='img-blok'>
+          <img src='/5.png' alt='Commercial Projects' class='' />
         </div>
         <div class='text-blok'>
           <h2 class='text-2xl font-bold mb-4'>Commercial projects</h2>
@@ -254,8 +245,15 @@ import RoleList from '../components/RoleList.astro';
       section {
         background: linear-gradient(79.11deg, #121112 2.53%, #0a0a0a 97.19%);
         border: 1px solid #ffffff0a;
+        @apply my-6 rounded-3xl flex flex-col items-center justify-between odd:md:flex-row even:md:flex-row-reverse;
       }
 
+      .text-blok {
+        @apply w-full md:w-1/2 px-12 my-10;
+      }
+      .img-blok {
+        @apply w-full md:w-1/2 flex justify-center items-center;
+      }
       footer {
         background-image: url('/f.svg');
         background-size: cover;
@@ -302,13 +300,6 @@ import RoleList from '../components/RoleList.astro';
         color: #a4a4a4;
         text-indent: -0px;
         @apply mb-2 -indent-0;
-      }
-
-      .text-blok {
-        @apply flex-1 mb-4 md:mb-0 md:mr-4;
-      }
-      section {
-        @apply gap-4 my-6 p-8 rounded-3xl flex flex-col items-center justify-between odd:md:flex-row-reverse even:md:flex-row;
       }
     </style>
   </body>
